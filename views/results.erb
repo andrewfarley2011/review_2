@@ -1,0 +1,8 @@
+
+<%toppings.each do|top|%>
+
+<form method ="post" action = "/final">
+<p><input  type="checkbox" name="final_toppings[]" value="<%=top%>"><%=top%></p>
+<%end%>
+<input type = "submit">
+</form>
